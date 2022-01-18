@@ -58,8 +58,19 @@ table {
 html {
 	font-family: BBC, sans-serif;
 }
+#main-navbar {
+	position: relative;
+	width: 100%;
+	top: 0;
+}
+#navbar-btns {
+	border-color: #666;
+	border-right: 1px solid #ccc;
+}
 .btn-nav {
 	background-color: black;
+	float: left;
+	padding-left: 1rem;
 }
 .a-nav {
 	text-decoration: none;
@@ -82,11 +93,21 @@ html {
 /* -----------------------------*/
 .welcome-article {
 	box-sizing: border-box;
-	width: 50%;
+	width: 25%;
 	float: left;
 	position: relative;
 }
-.article-content {
+.news-article {
+	box-sizing: border-box;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+#welcome-article-promo {
+	width: 50%;
+}
+
+.welcome-article > .article-content {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -99,6 +120,16 @@ html {
 	padding-left: 1rem;
 	background-image: linear-gradient(transparent,rgba(0,0,0,0.9));
 }
+.welcome-article > .article-content > .article-title {
+	color: white;
+}
+.news-article > .article-content > .article-title {
+	color: black;
+}
+.news-article > .article-content > .article-summary {
+	color: dimgrey;
+}
+
 .article-image {
 	padding: 0;
 	width: 100%;
