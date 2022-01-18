@@ -96,12 +96,15 @@ html {
 	width: 25%;
 	float: left;
 	position: relative;
+	justify-content: space-evenly;
 }
 .news-article {
 	box-sizing: border-box;
 	width: 25%;
 	float: left;
 	position: relative;
+	padding: 1rem;
+	justify-content: space-evenly;
 }
 #welcome-article-promo {
 	width: 50%;
@@ -129,8 +132,11 @@ html {
 .news-article > .article-content > .article-summary {
 	color: dimgrey;
 }
+.news-article > .article-image {
+	width: 100%;
+}
 
-.article-image {
+.article-image > img {
 	padding: 0;
 	width: 100%;
 	box-shadow: inset 0 0 80px rgb(0 0 0 / 50%);
