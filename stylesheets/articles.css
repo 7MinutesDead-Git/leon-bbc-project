@@ -45,7 +45,7 @@
     /*background-image: url('https://i.imgur.com/QeTudJ4.jpg');*/
 }
 .promo-article:hover > .article-content {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
 }
 .promo-article > .article-content {
     transition: ease-in-out 200ms;
