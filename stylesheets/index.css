@@ -1,4 +1,7 @@
-/* css reset ------------------------------------------
+@import "nav.css";
+@import "articles.css";
+
+/* CSS reset ------------------------------------------
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -58,105 +61,19 @@ table {
 html {
 	font-family: BBC, sans-serif;
 }
-#main-navbar {
-	position: relative;
-	max-width: 100%;
-	top: 0;
-}
-#navbar-btns {
-	border-color: #666;
-	border-right: 1px solid #ccc;
-}
-.btn-nav {
-	background-color: black;
-	float: left;
-	padding-left: 1rem;
-}
-.a-nav {
-	text-decoration: none;
-	color: gainsboro;
-	font-weight: bold;
-}
 
-.section-title {
-	text-decoration: none;
-	color: dimgrey;
-	font-weight: bold;
-	font-size: x-large;
-}
-
-.a-section {
-	text-decoration: inherit;
-	color: inherit;
-}
-
-/* -----------------------------*/
-.welcome-article {
-	box-sizing: border-box;
-	max-width: 25%;
-	float: left;
-	position: relative;
-	justify-content: space-evenly;
-}
-.news-article {
-	box-sizing: border-box;
-	max-width: 25%;
-	float: left;
-	position: relative;
-	padding: 1rem;
-	justify-content: space-evenly;
-}
-#welcome-article-promo {
-	max-width: 50%;
-}
-
-.welcome-article > .article-content {
-	max-width: 100%;
-	max-height: 70%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: auto;
-	margin: 0;
-	padding-right: 1rem;
-	padding-bottom: 1rem;
-	padding-left: 1rem;
-	background-image: linear-gradient(transparent,rgba(0,0,0,0.9));
-}
-.welcome-article > .article-content > .article-title {
-	color: white;
-}
-.news-article > .article-content > .article-title {
-	color: black;
-}
-.news-article > .article-content > .article-summary {
-	color: dimgrey;
-}
-
-.article-image > img {
-	padding: 0;
-	max-width: 100%;
-	box-shadow: inset 0 0 80px rgb(0 0 0 / 50%);
-}
-/* -----------------------------*/
-
-.welcome-articles-section {
-	box-sizing: border-box;
-	max-width: 100%;
-	padding-top: 1rem;
-}
-
-.article-title {
-	font-weight: bold;
-	font-size: x-large;
-	color: white;
-}
-
-.article-summary {
-	color: lightgoldenrodyellow;
-}
 .media-tag {
 	font-size: small;
 	color: indianred;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3, .col-2-3 {
+	display: inline-block;
+	vertical-align: top;
 }
